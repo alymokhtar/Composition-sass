@@ -1,0 +1,74 @@
+.footer {
+  background-color: $greyColor;
+  .all {
+    display: flex;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      text-align: center;
+      max-width: 100%;
+    }
+    .blog {
+      max-width: 50%;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+      h4 {
+        color: $secoundary-color;
+      }
+      .blog-one {
+        display: flex;
+        .img {
+          padding: 20px 20px 20px 0;
+          img {
+            max-width: 100%;
+            border: 0.5px solid $secoundary-color;
+          }
+        }
+        .content {
+          min-width: 80%;
+          h4 {
+            color: $mainColor;
+          }
+          P {
+            line-height: 1.7;
+            color: $secoundary-color;
+          }
+        }
+      }
+    }
+    .company-details {
+      color: $secoundary-color;
+      max-width: 25%;
+      padding: 0 30px;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+      p {
+        span {
+          color: $mainColor;
+        }
+      }
+    }
+    .contact-us {
+      color: $secoundary-color;
+      max-width: 25%;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+      input,
+      textarea {
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    color: $secoundary-color;
+  }
+}

@@ -1,0 +1,54 @@
+// Start Header
+.header {
+  border-bottom: 1px solid $greyColor;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    .logo {
+      h1 {
+        margin-bottom: 0;
+        font-weight: normal;
+        color: $secoundary-color;
+        font-size: 40px;
+      }
+      p {
+        font-size: 12px;
+        color: $secoundary-color;
+      }
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      background-color: $mainColor;
+      border-radius: 15px;
+      width: 70%;
+      height: 50px;
+      text-align: center;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+      li {
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          @media (max-width: 991px) {
+            text-transform: lowercase;
+          }
+          &:hover {
+            color: $greyColor;
+          }
+        }
+      }
+    }
+  }
+}
+// End Header
